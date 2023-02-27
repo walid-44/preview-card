@@ -1,0 +1,94 @@
+body{
+  font-family: 'Outfit', sans-serif;;
+  background-color: hsl(217, 54%, 11%);
+}
+.conatiner{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  padding: 25px;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: hsl(215, 32%, 27%);
+  border-radius: 8px;
+  box-shadow: 10px 10px hsl(216, 54%, 11%);
+}
+.conatiner img{
+  max-width: 100%;
+}
+.conatiner .imgs{
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.conatiner .imgs:hover::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:hsla(178, 100%, 50%, 0.386);
+  z-index: 2;
+  cursor: pointer;
+}
+.conatiner h2{
+  color: white;
+  transition: 0.3s;
+  
+}
+.conatiner h2:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.conatiner p{
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.conatiner .eth{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 20px;
+  position: relative;
+}
+.eth span:first-child{
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  
+}
+.eth span:first-child img{
+  margin-right: 7px;
+}
+.eth span:last-child{
+  display: flex;
+  color: hsl(215, 51%, 70%);
+}
+.eth span:last-child img{
+  margin-right: 7px;
+}
+.conatiner .aquilib{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-top: 1px solid hsl(215, 51%, 70%)  ;
+  margin-top: 10px;
+  padding: 15px 0 20px;
+}
+.conatiner .aquilib img{
+  width: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.conatiner .aquilib .text{
+  color: hsl(215, 51%, 70%);
+  padding-left: 15px;
+}
+.conatiner .aquilib .text span{
+  color: hsl(0, 0%, 100%);
+}
+.conatiner .aquilib .text span:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
